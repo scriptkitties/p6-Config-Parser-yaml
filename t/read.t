@@ -6,10 +6,13 @@ use lib "lib";
 
 use Config;
 
-plan 3;
+plan 5;
 
 my $config = Config.new();
 
-ok $config.read("t/test.yaml");
-ok $config.get("a") eq "a";
-ok $config.get("b.c") eq "c";
+ok $config.read("t/test.yaml"), "Read a YAML file";
+
+ok $config.get("a") eq "a", "Get simple key";
+ok $config.get("b.c") eq "c", "Get nested key";
+ok $config.get("nonexistant") === Nil, "Get nonexistant key";
+ok $config.get("nonexistant", "test") === "test", "Get nonexistant key with default";

@@ -1,5 +1,12 @@
 # Config::Parser::yaml
-A YAML parser for Config.
+A YAML parser for [Config](https://github.com/scriptkitties/p6-Config).
+
+[![Build Status](https://travis-ci.org/scriptkitties/p6-Config-Parser-yaml.svg?branch=master)](https://travis-ci.org/scriptkitties/p6-Config-Parser-yaml)
+
+## Installation
+```sh
+zef install Config::Parser::yaml
+```
 
 ## License
 This program is free software: you can redistribute it and/or modify it under
