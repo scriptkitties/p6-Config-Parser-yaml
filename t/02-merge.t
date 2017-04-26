@@ -19,4 +19,4 @@ is-deeply $config.get(), {
         c => "c",
         d => "d"
     }
-}
+}, "Ensure configurations are merged";
